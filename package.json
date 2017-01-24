@@ -4,6 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prestart":"node buildScripts/startMessage.js",
+    "start":"npm-run-all --parallel security-check open:src",
+    "open:src":"node buildScripts/srcServer.js",
+    "security-check" : "nsp check",
+    "ngrok-tunnel":"E:\\BS\\lap\\ngrok-stable-windows-amd64\\ngrok http 3000",
+    "share":"npm-run-all --parallel open:src ngrok-tunnel",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
