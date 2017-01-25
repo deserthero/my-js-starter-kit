@@ -48,6 +48,13 @@ Project structure:
 - use pojos to encapsulate logic
 - Never ever use js inside html js relate to js files only.
 Production build:
+- Minification for html, js, css and cach busting
+- use trackjs for log production issues
+- use ejs for templating to allow inject some scripts when production and not when dev.
+- To be continue later in writting this doc.
+
+
+ 
 
 
 
